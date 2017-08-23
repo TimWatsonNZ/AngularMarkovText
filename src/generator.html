@@ -1,0 +1,49 @@
+<div>
+    <div>
+        <div>
+            <label for="input">Input</label>
+        </div>
+        
+        <textarea rows="10" cols="80" ng-model="vm.input">Sample input</textarea>
+    </div>
+    <br />
+
+    <div>
+        <label id="orderLabel" for="tweetAuthorField">Tweet Author:
+            <input id="tweetAuthorField" type="text" style="width:100px" ng-model="vm.tweetAuthor"/>
+        </label>
+        <label for="tweetCountField">Tweet Count: 
+            <input id="tweetCountField" type="text"style="width:50px" ng-model="vm.tweetCount">
+        </label>
+        <button ng-click="vm.getTweets()">Get Tweets</button>
+    </div>
+
+    <br />
+
+    <div>
+        <button id="analyze" ng-click="vm.analyze()">Analyze</button>
+        <button id="generate" ng-click="vm.generate()">Generate</button>
+        <br/>
+        <br/>
+        <label id="orderLabel" for="orderField">Order:
+            <input type="text" style="width:20px" ng-model="vm.order"/>
+        </label>
+
+        <label id="outputLengthFieldLabel" for="outputLengthField">Output length:
+            <input  type="text" style="width:40px" ng-model="vm.outputLength"/>
+        </label>
+    </div>
+
+    <br />
+
+    <div>
+        
+    </div>
+
+    <div>
+        <label for="output">Output</label>
+        <br />
+        <textarea id="output" rows="10" cols="80" ng-model="vm.output">
+        </textarea>
+    </div>
+</div>
